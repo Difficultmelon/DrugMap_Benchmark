@@ -1,0 +1,40 @@
+{
+  "dataset_variant": "revised_diverse_enzymes",
+  "experiments": {
+    "experiment2_compositional": {
+      "bundle_count": 451,
+      "metrics": [
+        {"model": "GPT-5.6 Terra", "atomic_all_prerequisites_accuracy": 0.4656319290465632, "direct_target_accuracy": 0.9733924611973392, "conditional_reasoning_accuracy": 0.9761904761904762},
+        {"model": "Qwen-3.8-max", "atomic_all_prerequisites_accuracy": 0.352549889135255, "direct_target_accuracy": 0.9955654101995566, "conditional_reasoning_accuracy": 0.9937106918238994},
+        {"model": "Gemma-4-E4B-it", "atomic_all_prerequisites_accuracy": 0.2749445676274945, "direct_target_accuracy": 0.8558758314855875, "conditional_reasoning_accuracy": 0.8306451612903226},
+        {"model": "Hulu-Med-7B", "atomic_all_prerequisites_accuracy": 0.09090909090909091, "direct_target_accuracy": 0.42350332594235035, "conditional_reasoning_accuracy": 0.2926829268292683},
+        {"model": "DeepSeek-V4.1-flash", "atomic_all_prerequisites_accuracy": 0.4035476718403548, "direct_target_accuracy": 1.0, "conditional_reasoning_accuracy": 1.0}
+      ]
+    },
+    "experiment3_counterfactual": {
+      "triplet_count": 451,
+      "metrics": [
+        {"model": "GPT-5.6 Terra", "original_accuracy": 0.1574279379157428, "lexical_control_accuracy": 0.14412416851441243, "causal_sensitivity_score": 0.6851441241685144},
+        {"model": "Qwen-3.8-max", "original_accuracy": 0.024390243902439025, "lexical_control_accuracy": 0.04434589800443459, "causal_sensitivity_score": 0.8137472283813747},
+        {"model": "Gemma-4-E4B-it", "original_accuracy": 0.0, "lexical_control_accuracy": 0.0, "causal_sensitivity_score": 0.8381374722838137},
+        {"model": "Hulu-Med-7B", "original_accuracy": 0.008869179600886918, "lexical_control_accuracy": 0.0022172949002217295, "causal_sensitivity_score": 0.22616407982261633},
+        {"model": "DeepSeek-V4.1-flash", "original_accuracy": 0.0, "lexical_control_accuracy": 0.0022172949002217295, "causal_sensitivity_score": 0.8514412416851441}
+      ]
+    },
+    "experiment4_answer_format": {
+      "semantic_group_count": 2877,
+      "metrics": [
+        {"model": "GPT-5.6 Terra", "open_ended_accuracy": 0.12061174834897463, "mean_permutation_accuracy": 0.742005561348627, "all_permutations_consistency": 0.5915884602015989},
+        {"model": "Qwen-3.8-max", "open_ended_accuracy": 0.1397288842544317, "mean_permutation_accuracy": 0.7105491831769204, "all_permutations_consistency": 0.5599582898852972},
+        {"model": "Gemma-4-E4B-it", "open_ended_accuracy": 0.10114702815432743, "mean_permutation_accuracy": 0.566301703163017, "all_permutations_consistency": 0.33507125477928396},
+        {"model": "Hulu-Med-7B", "open_ended_accuracy": 0.09141466805700382, "mean_permutation_accuracy": 0.4559436913451512, "all_permutations_consistency": 0.15502259297879736},
+        {"model": "DeepSeek-V4.1-flash", "open_ended_accuracy": 0.16197427876259993, "mean_permutation_accuracy": 0.7014250955856796, "all_permutations_consistency": 0.5147723322905805}
+      ]
+    }
+  },
+  "completeness": {
+    "experiment2_compositional": "Every listed run contains 451/451 bundles and only ok rows.",
+    "experiment3_counterfactual": "Every listed run contains 451/451 triplets and only ok rows.",
+    "experiment4_answer_format": "Every listed run contains 2877/2877 semantic groups and only ok rows; complete results are available for all five listed models."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_id",
+    "item_id",
+    "model",
+    "model_snapshot",
+    "condition",
+    "raw_response",
+    "parsed_answer"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "model_snapshot": {
+      "type": "string"
+    },
+    "condition": {
+      "enum": [
+        "closed_book",
+        "open_web"
+      ]
+    },
+    "raw_response": {
+      "type": "string"
+    },
+    "parsed_answer": {},
+    "search_trace": {
+      "type": "array"
+    },
+    "latency_ms": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "input_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "output_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  }
+}

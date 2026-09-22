@@ -1,0 +1,26 @@
+{
+  "dataset_root": "data",
+  "core_questions": "public/dragmapbench_V5.2_questions.json",
+  "core_gold": "private/dragmapbench_V5.2_gold.json",
+  "diagnostic_public": "public",
+  "diagnostic_private": "private",
+  "models_config": "configs/models.json",
+  "default_temperature": 0.0,
+  "default_max_output_tokens": 512,
+  "max_retries": 5,
+  "request_timeout_seconds": 120,
+  "open_web": {
+    "max_queries": 5,
+    "max_pages": 10,
+    "max_tool_turns": 6,
+    "fallback_search_if_no_tool": true,
+    "fallback_max_results": 5,
+    "citation_required": true
+  },
+  "statistics": {
+    "bootstrap_replicates": 10000,
+    "random_seed": 20260911
+  },
+  "dataset_variant": "revised_diverse_enzymes",
+  "expected_core_size": 6200
+}

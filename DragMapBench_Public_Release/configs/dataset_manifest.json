@@ -1,0 +1,23 @@
+{
+  "active_dataset_variant": "revised_diverse_enzymes",
+  "core_questions_count": 6200,
+  "revised_subtype": "reduced_enzyme_activity_exposure",
+  "revised_items": 451,
+  "revised_enzyme_count": 55,
+  "diagnostic_counts": {
+    "compositional_bundles": 451,
+    "counterfactual_triplets": 451,
+    "answer_format_semantic_groups": 2877
+  },
+  "public_files": {
+    "core_questions": "data/public/dragmapbench_V5.2_questions.json",
+    "compositional": "data/public/compositional_bundles.json",
+    "counterfactual": "data/public/counterfactual_triplets.json",
+    "answer_format": "data/public/answer_format_variants.json"
+  },
+  "private_files": {
+    "core_gold": "data/private/dragmapbench_V5.2_gold.json",
+    "diagnostic_gold": "data/private/*_gold.json"
+  },
+  "revision_source_sha256": "1e5a151712a5a00f228c9496ce2290089912c8b7cb7bb8456745cba10e0f71f3"
+}

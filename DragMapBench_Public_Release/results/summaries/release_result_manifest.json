@@ -1,0 +1,24 @@
+{
+  "release": "DragMapBench V5.2 public release",
+  "created_at": "2026-09-22",
+  "raw_results_policy": "Raw results.jsonl, provider metadata, request IDs, search traces, and logs are excluded.",
+  "private_gold_policy": "Core and diagnostic gold files are excluded from the public release.",
+  "source_project": "private working project; source run paths are intentionally not published",
+  "diagnostic_completeness": {
+    "experiment2_bundles": 451,
+    "experiment3_triplets": 451,
+    "experiment4_semantic_groups": 2877,
+    "experiment4_complete_models": [
+      "GPT-5.6 Terra",
+      "Qwen-3.8-max",
+      "Gemma-4-E4B-it",
+      "Hulu-Med-7B",
+      "DeepSeek-V4.1-flash"
+    ]
+  },
+  "included_summary_files": [
+    "main_closed_book_13_models.json",
+    "experiment1_open_web.json",
+    "experiments2_4_diagnostics.json"
+  ]
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "DragMapBench: Formal Pharmaceutical Benchmark"
+message: "If you use DragMapBench, please cite the associated paper."
+type: software
+license: MIT
+version: 5.2.0
+repository-code: "https://github.com/REPLACE_WITH_PUBLIC_REPOSITORY"
+authors:
+  - family-names: "DragMapBench Authors"
+date-released: 2026-09-22

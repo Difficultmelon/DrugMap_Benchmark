@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DragMapBench V5.2 public question",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "subtype",
+    "question",
+    "task_format",
+    "answer_semantics",
+    "group_ids",
+    "benchmark_version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "subtype": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_format": {
+      "enum": [
+        "multiple_choice",
+        "short_answer",
+        "classification"
+      ]
+    },
+    "answer_semantics": {
+      "type": "string"
+    },
+    "group_ids": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "knowledge_unit_id",
+        "entity_cluster_id",
+        "template_group_id"
+      ],
+      "properties": {
+        "knowledge_unit_id": {
+          "type": "string"
+        },
+        "entity_cluster_id": {
+          "type": "string"
+        },
+        "template_group_id": {
+          "type": "string"
+        }
+      }
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "option_id",
+          "label",
+          "text"
+        ],
+        "properties": {
+          "option_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "benchmark_version": {
+      "const": "5.2"
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification_type",
+        "label_space"
+      ],
+      "properties": {
+        "classification_type": {
+          "enum": [
+            "binary",
+            "multiclass"
+          ]
+        },
+        "label_space": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

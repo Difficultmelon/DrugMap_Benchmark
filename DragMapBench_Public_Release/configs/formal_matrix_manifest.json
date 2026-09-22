@@ -1,0 +1,27 @@
+{
+  "protocol": {
+    "main": {
+      "description": "13-model, 6200-question closed-book baseline",
+      "condition": "closed_book",
+      "question_count": 6200
+    },
+    "experiment1": {
+      "description": "The same 6200 core questions with web access",
+      "condition": "open_web",
+      "question_count": 6200
+    },
+    "experiment2": {
+      "description": "Compositional atomic-prerequisite diagnostics",
+      "bundle_count": 451
+    },
+    "experiment3": {
+      "description": "Counterfactual lexical-control and causal-intervention diagnostics",
+      "triplet_count": 451
+    },
+    "experiment4": {
+      "description": "Open-ended and permuted multiple-choice answer-format diagnostics",
+      "semantic_group_count": 2877
+    }
+  },
+  "public_result_policy": "Only curated score summaries are included. Raw model responses and private gold remain outside the public release."
+}

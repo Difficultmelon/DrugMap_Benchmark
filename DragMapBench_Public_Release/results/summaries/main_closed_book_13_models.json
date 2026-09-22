@@ -1,0 +1,22 @@
+{
+  "dataset_variant": "revised_diverse_enzymes",
+  "condition": "closed_book",
+  "question_count": 6200,
+  "model_count": 13,
+  "metrics": [
+    {"model": "GPT-5.6 Terra", "accuracy": 0.7896774193548387, "correct_items": 4896},
+    {"model": "Qwen-3.8-max", "accuracy": 0.7648387096774194, "correct_items": 4742},
+    {"model": "MiniMax-M3", "accuracy": 0.780483870967742, "correct_items": 4839},
+    {"model": "GLM-5.3", "accuracy": 0.7906451612903226, "correct_items": 4902},
+    {"model": "Kimi-k3", "accuracy": 0.7714516129032258, "correct_items": 4783},
+    {"model": "DeepSeek-V4.1-flash", "accuracy": 0.7925806451612903, "correct_items": 4914},
+    {"model": "Qwen3.5-9B", "accuracy": 0.5969354838709677, "correct_items": 3701},
+    {"model": "Mistral-7B-Instruct-v0.3", "accuracy": 0.5320967741935484, "correct_items": 3299},
+    {"model": "Gemma-4-E4B-it", "accuracy": 0.650483870967742, "correct_items": 4033},
+    {"model": "Hulu-Med-7B", "accuracy": 0.5587096774193548, "correct_items": 3464},
+    {"model": "ATHENA-R1-Qwen3-8B", "accuracy": 0.517258064516129, "correct_items": 3207},
+    {"model": "MedGemma", "accuracy": 0.5114516129032258, "correct_items": 3171},
+    {"model": "Pharma Assistant v3", "accuracy": 0.32887096774193547, "correct_items": 2039}
+  ],
+  "source_status": "13 complete runs; revised 451 target items applied and audited in the working project"
+}

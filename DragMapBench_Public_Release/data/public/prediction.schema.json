@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DragMapBench prediction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "answer"],
+  "properties": {
+    "id": {"type": "string"},
+    "answer": {}
+  }
+}

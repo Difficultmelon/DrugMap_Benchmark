@@ -1,0 +1,12 @@
+{
+  "dataset_variant": "revised_diverse_enzymes",
+  "condition": "open_web",
+  "question_count": 6200,
+  "metrics": [
+    {"model": "DeepSeek-V4.1-flash", "accuracy": 0.62, "completeness": "complete"},
+    {"model": "Gemma-4-E4B-it", "accuracy": 0.5175806451612903, "completeness": "complete"},
+    {"model": "Hulu-Med-7B", "accuracy": 0.4396774193548387, "completeness": "complete"}
+  ],
+  "notes": "Only complete open-web runs present in the latest working snapshot are listed. Incomplete or early failed runs are intentionally omitted.",
+  "source_status": "curated from completed open-web runs"
+}
